@@ -1,0 +1,107 @@
+.lien {
+    font-size: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #99ccff;
+    text-decoration: underline overline #99ccff;
+}
+
+.lien:hover {
+    color:#880000;
+}
+.carte-accueil {
+    margin: 0.8em;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.titre_accueil{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border: 1px solid #99ccff;
+    color: #99ccff;
+}
+
+#inscription, #connexion{
+    color :black;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+
+#titre_connexion{
+
+    text-align : center;
+    margin-bottom: 70px;
+}
+.login-form-1{
+    border: 1px solid black;
+    position: absolute;
+    width: 350px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#footer {
+    margin-bottom: 10px;
+}
+
+.connexion_echouee {
+    text-transform: uppercase;
+    color: #880000;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 1em;
+    background-color: yellow;
+}
+
+.carte-accueil {
+    margin: 0.8em;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.lien {
+    color: #99ccff;
+    font-family: "Arial Narrow";
+    text-decoration: underline overline #99ccff;
+}
+
+.info_projet {
+    margin-left: 120px;
+    color: #99ccff;
+}
+
+.contact{
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.connexion_formulaire{
+
+    margin-bottom: 11em;
+    margin-top: -3em;
+    text-align: center;
+    margin-right: -5px;
+
+}
+
+.bouton_connexion{
+    color: #99ccff;
+}
+
+.formulaire_inscription{
+    margin-bottom: 25em;
+    margin-top: -2em;
+    text-align: center;
+    margin-left: -40px;
+}
+
+.admin_connexion{
+    margin-top: -5em;
+    margin-bottom: 5em;
+    text-align: center;
+}
