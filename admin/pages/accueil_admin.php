@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
         print $message;
     }
     ?></p>
-<div class="admin_connexion" style="padding:70px 0">
+<div class="admin_connexion" style="padding:75px 0">
     <div class="login-form-1">
         <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post" id="form_connexion">
             <form id="login-form" class="text-left">
