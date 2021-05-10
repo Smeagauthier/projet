@@ -2,20 +2,20 @@
 include('./lib/php/verifier_connexion.php');
 
 ?>
-<h2 class="titre_accueil">Editer ou ajouter un projet</h2>
+<h2 class="titre_accueil">Ajouter un projet</h2>
 <p>&nbsp;</p>
 
 <?php
-    $produit= new ProjetBD($cnx);
+    $projet= new ProjetBD($cnx);
     if(isset($_GET['editer'])){
         ?><pre><?php
         //var_dump($_GET);
         extract($_GET, EXTR_OVERWRITE);
-        $prod = $produit ->updateProjet($id_projet);
+        $proj = $projet ->updateProjet($id_projet);
     }
 
     if(isset($_GET['inserer'])){
-        $prod=$produit ->ajoutProjet();//ajouter les arguments vérifiés
+        $proj=$projet ->ajoutProjet($nom_projet, $description, $image, $proprietaire, $reference, $objectif, $temps);
 
     }
 ?>
@@ -37,6 +37,10 @@ include('./lib/php/verifier_connexion.php');
     <div class="col-md-2">
         <label for="proprietaire" class="form-label">Propriétaire</label>
         <input type="text" class="form-control" id="proprietaire" name="proprietaire" placeholder="Marie-Ange Casalta">
+    </div>
+    <div class="col-md-2">
+        <label for="image" class="form-label">Image</label>
+        <input type="text" class="form-control" id="image" name="image" placeholder="image.jpg">
     </div>
     <div class="col-md-2">
         <label for="objectif" class="form-label">Objectif</label>

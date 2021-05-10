@@ -11,7 +11,6 @@ class Connexion {
             try{
                 //on essaie d'instancier un objet PDO
                 self::$_instance = new PDO($dsn, $user, $password);
-                //print "connecté";
             } catch(PDOException $e){
                 print "Echec: ".$e->getMessage();
             }

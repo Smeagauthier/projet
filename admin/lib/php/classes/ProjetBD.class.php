@@ -54,21 +54,21 @@ class ProjetBD extends Projet
     }
 
 
-    public function ajoutProjet($id_projet)
+    public function ajoutProjet($nom_projet, $description, $image, $proprietaire, $reference, $objectif, $temps)
     {
-       /* try {
+        try {
             $last="select max(id_projet) from cf_projet";
-            $chiffre = $this->_db->prepare($last);
-            $chiffre->execute();
-            $retour = $chiffre->fetchColumn(0);
+            $resultset = $this->_db->prepare($last);
+            $resultset->execute();
+            $retour = $resultset->fetchColumn(0);
             $retour=$retour +1;
-            $query = "INSERT INTO compte (id_compte, login, password) VALUES ($retour, '".$login."', '".$password."')";
+            $query = "INSERT INTO cf_projet (id_projet, nom_projet, description, image, proprietaire, reference, objectif, temps ) VALUES ('".$retour."','".$nom_projet."', '".$description."', '".$image."', '".$proprietaire."', '".$reference."', '".$objectif."', '".$temps."')";
             $_resultset = $this->_db->prepare($query);
             $_resultset->execute();
             $b = $_resultset->fetch();
             return $b;
         }catch(PDOException $e){
-        }*/
+        }
 
 
     }

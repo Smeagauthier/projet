@@ -1,8 +1,8 @@
 <?php
-include ('./admin/lib/php/pg_connect.php');
-include ('./admin/lib/php/classes/Connexion.class.php');
-include ('./admin/lib/php/classes/Projet.class.php');
-include ('./admin/lib/php/classes/ProjetBD.class.php');
+include ('../admin/lib/php/pg_connect.php');
+include ('../admin/lib/php/classes/Connexion.class.php');
+include ('../admin/lib/php/classes/Projet.class.php');
+include ('../admin/lib/php/classes/ProjetBD.class.php');
 $cnx = Connexion::getInstance($dsn,$user,$password);
 $pr = array();
 $projet = new ProjetBD($cnx);
