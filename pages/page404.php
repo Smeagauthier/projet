@@ -1,1 +1,1 @@
-<h2>Page inexistante</h2>
+<h3 class="connexion_echouee">Page inexistante</h3>

@@ -13,7 +13,7 @@ $pdf = new TCPDF('P','mm','A4');
 $pdf->AddPage();
 $pdf->SetFont('times','B',15);
 $pdf->SetTextColor(255,0,0);
-$pdf->Cell(190,10,'A la cagnotte intitulée: ',1,1,'C');
+$pdf->Cell(190,10,'Liste des cagnottes:  ',1,1,'C');
 $pdf->SetFont('times','',12);
 $pdf->SetTextColor(0,0,0);
 $x = 20;

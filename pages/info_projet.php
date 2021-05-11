@@ -12,7 +12,7 @@
             </div>
             <div class="modal-footer text-center">
                 &nbsp;<i class="fas fa-arrow-right"></i>
-                <button type="button" class="btn btn-primary dans_panier" id="clic_panier" onclick="window.location.href='./pages/facture.php';">Faire un don</button>
+                <button type="button" class="btn btn-primary dans_panier" id="clic_panier" onclick="window.location.href='index_.php?page=paiement.php';">Faire un don</button>
                 <div id="ok"></div>
             </div>
         </div>

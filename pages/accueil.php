@@ -16,8 +16,8 @@ $nbr = count($projets);
                 Découvrir les projets
             </button>
 
-            <button type="submit" class="bouton_connexion" name="envoyer" id="envoyer" value="Envoyer" onclick="window.location.href='index_.php?page=connexion.php';">Se
-                connecter
+            <button type="submit" class="bouton_connexion" onclick="window.location.href='./pages/facture.php';">
+                Liste des projets en PDF
             </button>
         </div>
 <section>
@@ -42,7 +42,7 @@ $nbr = count($projets);
                          alt="logo_association">
                     <div class="card-body">
                         <h5 class="card-title">
-                            <a class="lien" href="#">
+                            <a class="lien" href="index_.php?page=decouvrir.php">
                                 <?php print $liste_pro[$i]->nom_projet; ?>
                             </a>
                         </h5>

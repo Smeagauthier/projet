@@ -3,7 +3,7 @@
 class ProjetBD extends Projet
 {
 
-    private $_db; //recevoir la valeur de $snx lors de la connexion à la BD dans index
+    private $_db; //recevoir la valeur de $cnx lors de la connexion à la BD dans index
     private $_data = array();
     private $_resultset;
 
@@ -54,7 +54,7 @@ class ProjetBD extends Projet
     }
 
 
-    public function ajoutProjet($nom_projet, $description, $image, $proprietaire, $reference, $objectif, $temps)
+    public function ajoutProjet($reference, $nom_projet, $description, $proprietaire, $image, $objectif, $temps)
     {
         try {
             $last="select max(id_projet) from cf_projet";
@@ -62,7 +62,7 @@ class ProjetBD extends Projet
             $resultset->execute();
             $retour = $resultset->fetchColumn(0);
             $retour=$retour +1;
-            $query = "INSERT INTO cf_projet (id_projet, nom_projet, description, image, proprietaire, reference, objectif, temps ) VALUES ('".$retour."','".$nom_projet."', '".$description."', '".$image."', '".$proprietaire."', '".$reference."', '".$objectif."', '".$temps."')";
+            $query = "INSERT INTO cf_projet (id_projet, nom_projet, description, image, proprietaire, reference, objectif, temps ) VALUES ($retour,'".$nom_projet."', '".$description."', '".$image."', '".$proprietaire."', '".$reference."', '".$objectif."', '".$temps."')";
             $_resultset = $this->_db->prepare($query);
             $_resultset->execute();
             $b = $_resultset->fetch();
@@ -114,3 +114,6 @@ class ProjetBD extends Projet
     }
 
 }
+
+
+
