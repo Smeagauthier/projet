@@ -21,7 +21,7 @@ $nbr = count($projets);
             </button>
         </div>
 <section>
-    Bienvenue sur Stussy - Crowfunding ! Notre but est d'utiliser la solidarité afin d'aider des personnes dans le besoin ou de financer des projets.
+    Bienvenue sur Gori - Crowfunding ! Notre but est d'utiliser la solidarité afin d'aider des personnes dans le besoin ou de financer des projets.
     Ainsi, plusieurs cagnottes vous sont proposées, libre à chacun de participer à l'une ou l'autre (ou éventuellement les 2 pour les plus généreux).
     Le montant de votre donation vous est libre tant qu'il n'est pas inférieur à 1€.
     <i>NB: Certaines cagnottes ont une deadline.</i>

@@ -11,11 +11,11 @@ $nbr = count($liste);
 include ('../admin/lib/php/TCPDF/tcpdf.php');
 $pdf = new TCPDF('P','mm','A4');
 $pdf->AddPage();
-$pdf->SetFont('times','B',15);
-$pdf->SetTextColor(255,0,0);
+$pdf->SetFont('times','C',15);
+$pdf->SetTextColor(270,0,0);
 $pdf->Cell(190,10,'Liste des cagnottes:  ',1,1,'C');
 $pdf->SetFont('times','',12);
-$pdf->SetTextColor(0,0,0);
+$pdf->SetTextColor(150,0,0);
 $x = 20;
 $y = 50;
 for($i = 0;$i<$nbr; $i++){

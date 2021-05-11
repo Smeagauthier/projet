@@ -62,7 +62,7 @@ class ProjetBD extends Projet
             $resultset->execute();
             $retour = $resultset->fetchColumn(0);
             $retour=$retour +1;
-            $query = "INSERT INTO cf_projet (id_projet, nom_projet, description, image, proprietaire, reference, objectif, temps ) VALUES ($retour,'".$nom_projet."', '".$description."', '".$image."', '".$proprietaire."', '".$reference."', '".$objectif."', '".$temps."')";
+            $query = "INSERT INTO cf_projet (reference, nom_projet, description, image, proprietaire, objectif, temps ) VALUES ('".$reference."','".$nom_projet."', '".$description."', '".$image."', '".$proprietaire."', '".$objectif."', '".$temps."')";
             $_resultset = $this->_db->prepare($query);
             $_resultset->execute();
             $b = $_resultset->fetch();

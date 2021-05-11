@@ -8,9 +8,14 @@ if (isset($_POST['submit'])) {
     $admin = $ad->getAdmin($pseudo, $password);
     if ($admin) {
         $_SESSION['admin'] = 1;
-        print "OK";
+        ?>
+        <meta http-equiv="refresh" : content="0;URL=index_.php?page=gestion_projets.php">
+        <?php
     } else {
-        $message = "Identifiants incorrects";
+
+        ?>
+            <h5 class="message_connexion"> Identifiants incorrects </h5>
+        <?php
     }
 }
 ?>

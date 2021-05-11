@@ -5,7 +5,7 @@
         <h5 class="titre_accueil">Nous contacter </h5>
         <h6 class="card-subtitle mb-2 text-muted"></h6>
         <p class="card-text">Un soucis avec une ta donation ? Tu veux nous contacter pour nous faire part d'améliorations ? Ou
-            encore tu souhaites rejoindre l'équipe Stussy - Crowdfunding ? N'hésite pas à nous contacter par mail, nous nous
+            encore tu souhaites rejoindre l'équipe Gori - Crowdfunding ? N'hésite pas à nous contacter par mail, nous nous
             efforçerons d'y répondre dans les plus brefs délais.</p>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Envoyer</button>
 

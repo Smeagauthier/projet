@@ -11,9 +11,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index_.php?page=edit_projets.php">Ajouter un projet</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index_.php?page=edit_projets.php">Supprimer un projet</a>
-                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="index_.php?page=disconnect.php">Se déconnecter</a>

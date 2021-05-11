@@ -6,7 +6,10 @@ if (isset($_POST['envoyer'])) {
     $client = $log->isClient($_POST['pseudo'], $_POST['password']);
 
     if (is_null($client)) {
-        print 'Mot de passe ou pseudo incorrect';
+        ?>
+        <h5 class="message_connexion"> Identifiants incorrects </h5>
+        <?php
+        
     } else {
         $_SESSION['client'] = 1;
         print 'Client trouvé';

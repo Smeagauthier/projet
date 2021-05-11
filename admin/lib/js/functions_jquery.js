@@ -60,6 +60,9 @@ $(document).ready(function () {
                     $('#description').val(data[0].description);
                     $('#proprietaire').val(data[0].proprietaire);
                     $('#id_projet').val(data[0].id_projet);
+                    $('#objectif').val(data[0].objectif);
+                    $('#temps').val(data[0].temps);
+                    $('#image').val(data[0].image);
 
                 }
             });
@@ -68,6 +71,9 @@ $(document).ready(function () {
                 $('#nom_projet').val('');
                 $('#proprietaire').val('');
                 $('#description').val('');
+                $('#temps').val('');
+                $('#objectif').val('');
+                $('#image').val('');
             });
         }
     });

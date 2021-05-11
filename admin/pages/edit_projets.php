@@ -7,15 +7,15 @@ include('./lib/php/verifier_connexion.php');
 
 <?php
     $projet= new ProjetBD($cnx);
-    if(isset($_GET['inserer'])){
+    if(isset($_GET['editer'])){
         ?><pre><?php
         //var_dump($_GET);
         extract($_GET, EXTR_OVERWRITE);
-        //$proj = $projet ->updateProjet($id_projet);
+        $proj = $projet ->updateProjet($nom_projet, $description, $proprietaire, $image, $reference, $objectif, $temps);
     }
 
     if(isset($_GET['inserer'])){
-        $proj=$projet ->ajoutProjet($nom_projet, $description, $proprietaire, $image, $reference, $objectif, $temps);
+        $proj=$projet ->ajoutProjet($reference, $nom_projet, $description, $proprietaire, $image, $objectif, $temps);
 
     }
 ?>
