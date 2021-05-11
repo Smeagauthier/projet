@@ -9,10 +9,12 @@ if (isset($_POST['envoyer'])) {
         ?>
         <h5 class="message_connexion"> Identifiants incorrects </h5>
         <?php
-        
+
     } else {
         $_SESSION['client'] = 1;
-        print 'Client trouvé';
+        ?>
+        <h5 class="message_connexion_bon"> Accès autorisé </h5>
+        <?php
         $_SESSION['mon_client'] = $client[0]->id_client;
         ?>
         <meta http-equiv = "refresh": content = "0;url=index_.php?page=accueil.php">
